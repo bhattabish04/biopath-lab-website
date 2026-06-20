@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BIOPATH LAB | Accurate Diagnostics. Trusted Healthcare.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#007432",
+                        "on-primary-container": "#ffffff",
+                        "surface-bright": "#f8f9ff",
+                        "tertiary-fixed-dim": "#ffb599",
+                        "surface": "#f8f9ff",
+                        "on-tertiary-container": "#ffffff",
+                        "surface-container-low": "#eff4ff",
+                        "surface-container-highest": "#d3e4fe",
+                        "on-secondary-fixed": "#002109",
+                        "inverse-primary": "#b1c5ff",
+                        "on-primary-fixed": "#001946",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#6bff8f",
+                        "primary": "#0057cd",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#006e2f",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "error": "#ba1a1a",
+                        "on-background": "#0b1c30",
+                        "tertiary": "#a63b00",
+                        "on-secondary": "#ffffff",
+                        "outline": "#727787",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#00419e",
+                        "on-tertiary-fixed": "#370e00",
+                        "secondary-fixed": "#6bff8f",
+                        "surface-container-high": "#dce9ff",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#ffdbce",
+                        "inverse-surface": "#213145",
+                        "tertiary-container": "#cf4b00",
+                        "secondary-fixed-dim": "#4ae176",
+                        "on-surface": "#0b1c30",
+                        "background": "#f8f9ff",
+                        "surface-variant": "#d3e4fe",
+                        "on-surface-variant": "#424655",
+                        "surface-tint": "#0057cd",
+                        "surface-dim": "#cbdbf5",
+                        "primary-fixed": "#dae2ff",
+                        "on-secondary-fixed-variant": "#005321",
+                        "outline-variant": "#c2c6d8",
+                        "surface-container": "#e5eeff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "primary-container": "#0d6efd",
+                        "on-tertiary-fixed-variant": "#7f2b00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "gutter": "24px",
+                        "stack-lg": "32px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "16px",
+                        "container-max": "1440px",
+                        "stack-sm": "8px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "body-sm": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .premium-card {
+            border: 1px solid #E2E8F0;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease-in-out;
+        }
+        .premium-card:hover {
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
+            transform: translateY(-4px);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full bg-surface dark:bg-surface-dim shadow-[0px_4px_20px_rgba(0,0,0,0.05)] z-50 transition-colors duration-300">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<img alt="BIOPATH LAB Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTGumKKcw_UhP6SA2FF1dYBNb8dXw0YVT9qrLs3zJ2aWCmFHCCh3fQnDlZM5srw9u-z0Ch9bAUogSVnyTrFigD4iPE3x8GyAxdaNPsWBS1_8kJQfHNC35F3LX4I0IM7qoghsSJLN4dm5lf35U-MfsPA41sTV6i3C9OWjF-Yi9KQfQl9wldP4lILBvm5kpGtbJz45-1vwqEDsrRlJfHuL92oXw13huje5_s61y1I1yJt69GpNXGCN9jH2IvrHeoTYH66iwMirCaJS0"/>
+<span class="text-headline-md font-headline-md font-bold text-primary dark:text-on-primary-fixed-variant">BIOPATH LAB</span>
+</div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-body-md text-body-md text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 cursor-pointer active:opacity-80" href="#tests-section">Tests</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 cursor-pointer active:opacity-80" href="#slider">Packages</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 cursor-pointer active:opacity-80" href="#contact-section">Contact Us</a>
+</div>
+<div class="flex items-center gap-4">
+<!-- Dark Mode Toggle -->
+<button id="themeToggleBtn" class="text-on-surface-variant dark:text-outline-variant p-2.5 hover:bg-surface-container-low rounded-lg transition-all" aria-label="Toggle dark mode">
+<span class="material-symbols-outlined">dark_mode</span>
+</button>
+<!-- Cart Toggle Button -->
+<button id="openCartBtn" class="relative text-on-surface-variant dark:text-outline-variant p-2.5 hover:bg-surface-container-low rounded-lg transition-all" aria-label="View Cart">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span id="cartBadge" class="absolute -top-1 -right-1 bg-primary text-white text-[10px] font-bold h-5 w-5 rounded-full flex items-center justify-center hidden">0</span>
+</button>
+<button class="hidden lg:block text-primary font-label-md px-4 py-2 hover:bg-surface-container-low rounded-lg transition-all dark:text-primary-fixed">Patient Login</button>
+<button id="bookTestNavBtn" class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-label-md hover:opacity-90 active:scale-95 transition-all">Book a Test</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-20 overflow-hidden min-h-[90vh] flex items-center">
+<!-- Shader Background -->
+<div class="absolute inset-0 z-0">
+
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-surface"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid md:grid-cols-2 gap-stack-lg items-center">
+<div class="space-y-stack-md">
+<div class="flex flex-wrap gap-2">
+  <div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-label-sm font-label-sm">
+    <span class="material-symbols-outlined text-[16px]">verified</span>
+    NABL &amp; CAP Certified Excellence
+  </div>
+  <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-100 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300 rounded-full text-label-sm font-label-sm">
+    <span class="material-symbols-outlined text-[16px]">home</span>
+    Free Home Sample Collection
+  </div>
+</div>
+<h1 class="font-display-lg text-[40px] md:text-display-lg leading-tight text-on-background">
+                    Accurate Diagnostics.<br/><span class="text-primary">Trusted Healthcare.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                    Book laboratory tests online, schedule **FREE home sample collection**, and receive secure digital reports within hours. Experience world-class pathology at your doorstep.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button onclick="document.getElementById('tests-section').scrollIntoView({behavior: 'smooth'})" class="bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-label-md text-body-md flex items-center justify-center gap-2 hover:opacity-90 shadow-lg transition-all">
+                        Book Your Test Today
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<a href="tel:+917889826727" class="bg-surface-container-lowest border border-outline-variant text-primary px-8 py-4 rounded-lg font-label-md text-body-md hover:bg-surface-container-low transition-all text-center flex items-center justify-center gap-2">
+                        Call Now: +91 7889826727
+                    </a>
+</div>
+</div>
+<div class="hidden md:block relative">
+<div class="relative w-full aspect-square max-w-md mx-auto">
+<div class="absolute inset-0 bg-primary/10 rounded-full animate-pulse"></div>
+<img class="relative z-10 w-full h-full object-cover rounded-full border-8 border-white shadow-2xl" data-alt="A professional female medical technician in a clean, high-tech laboratory environment. She is wearing a white lab coat and blue nitrile gloves, carefully handling a medical vial. The background shows advanced diagnostic equipment and soft cool-toned clinical lighting, emphasizing precision and medical expertise. The overall aesthetic is bright, premium, and trustworthy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxypI-IOfwN3vTQwuUwST-lb8rTAZwABhAPU_EH74n7kLpg04sAWgKGWj4wiikzNPxRfOM7EbahIFFVepVAHN9Kwm7DiXBK3dlz0jVgSHjzDgYFErfFdGYGN9NkZ_M8Co_9Muzrf7uVjj66518UShgZRBvyvfsM3ZwbSKk83-u2ezRZ3o9Em9Wis6lU-oBnuLEAUir3QBQjbgBx-3AuBrelfrDPypnbtAlegF_08BA1PLnUs4CNLKSFv7k_sQAm1GimlqWhRqGtoA"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Download Reports Quick Access -->
+<section class="relative -mt-12 z-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="bg-surface-container-lowest dark:bg-inverse-surface premium-card rounded-xl p-stack-md md:p-stack-lg flex flex-col md:flex-row items-center justify-between gap-6 transition-colors duration-300">
+<div class="flex items-center gap-4">
+<div class="bg-primary-container/10 p-3 rounded-lg text-primary dark:text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[32px]">download</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm">Download Reports</h3>
+<p class="text-body-sm text-on-surface-variant dark:text-outline-variant">Enter your Lab ID to access your digital records</p>
+</div>
+</div>
+<div class="flex w-full md:w-auto gap-2">
+<input id="reportInput" class="flex-grow md:w-64 rounded-lg border-outline-variant bg-surface-container-lowest dark:bg-surface-container/10 text-on-surface dark:text-inverse-on-surface focus:border-primary focus:ring-3 focus:ring-primary/10 transition-all font-body-md" placeholder="Enter Lab ID (e.g. BP-12345)" type="text"/>
+<button id="reportSearchBtn" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-label-md hover:opacity-90 active:scale-95 transition-all">View</button>
+</div>
+</div>
+</section>
+<!-- Popular Tests -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="tests-section">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-2">Popular Tests</h2>
+<p class="text-on-surface-variant dark:text-outline-variant font-body-md">Most frequently booked diagnostic services</p>
+</div>
+<div class="flex w-full md:w-auto gap-4 items-center">
+<div class="relative w-full md:w-64">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[20px] text-on-surface-variant dark:text-outline-variant">search</span>
+<input id="testSearchInput" class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest dark:bg-surface-container/10 border border-outline-variant rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/10 font-body-md text-body-sm text-on-surface dark:text-inverse-on-surface" placeholder="Search tests..." type="text"/>
+</div>
+<a class="text-primary dark:text-primary-fixed-dim font-label-md flex items-center gap-1 hover:underline whitespace-nowrap" href="#">
+                View All Tests
+                <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Test Card 1 -->
+<div class="premium-card bg-surface-container-lowest rounded-xl p-stack-lg flex flex-col h-full relative overflow-hidden">
+<div class="absolute top-2 right-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-300 text-[10px] font-bold px-2 py-0.5 rounded">
+  ₹300 OFF
+</div>
+<div class="flex justify-between items-start mb-6">
+<div class="bg-secondary-container/20 p-3 rounded-lg text-secondary">
+<span class="material-symbols-outlined text-[28px]">biotech</span>
+</div>
+<span class="text-label-sm px-2 py-1 bg-surface-container-high rounded text-on-surface-variant">45 Parameters</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">Full Body Checkup</h3>
+<p class="text-body-sm text-on-surface-variant mb-4 flex-grow">Comprehensive screening covering Liver, Kidney, Lipid Profile, and Vitamin levels.</p>
+<div class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold mb-6 flex items-center gap-1">
+  <span class="material-symbols-outlined text-[14px]">home</span> Free Home Sample Collection
+</div>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-outline-variant/30">
+<div class="flex flex-col">
+  <span class="text-[11px] text-on-surface-variant line-through">₹2,299</span>
+  <div class="text-headline-sm font-bold text-primary">₹1,999</div>
+</div>
+<button class="text-primary border border-primary px-4 py-1.5 rounded-lg font-label-md hover:bg-primary/5 transition-all">Add to Cart</button>
+</div>
+</div>
+<!-- Test Card 2 -->
+<div class="premium-card bg-surface-container-lowest rounded-xl p-stack-lg flex flex-col h-full relative overflow-hidden">
+<div class="absolute top-2 right-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-300 text-[10px] font-bold px-2 py-0.5 rounded">
+  ₹100 OFF
+</div>
+<div class="flex justify-between items-start mb-6">
+<div class="bg-tertiary-container/10 p-3 rounded-lg text-tertiary">
+<span class="material-symbols-outlined text-[28px]">bloodtype</span>
+</div>
+<span class="text-label-sm px-2 py-1 bg-surface-container-high rounded text-on-surface-variant">HbA1c &amp; Fasting</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">Diabetes Screening</h3>
+<p class="text-body-sm text-on-surface-variant mb-4 flex-grow">Accurate blood sugar monitoring with HbA1c testing for a 3-month average view.</p>
+<div class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold mb-6 flex items-center gap-1">
+  <span class="material-symbols-outlined text-[14px]">home</span> Free Home Sample Collection
+</div>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-outline-variant/30">
+<div class="flex flex-col">
+  <span class="text-[11px] text-on-surface-variant line-through">₹799</span>
+  <div class="text-headline-sm font-bold text-primary">₹699</div>
+</div>
+<button class="text-primary border border-primary px-4 py-1.5 rounded-lg font-label-md hover:bg-primary/5 transition-all">Add to Cart</button>
+</div>
+</div>
+<!-- Test Card 3 -->
+<div class="premium-card bg-surface-container-lowest rounded-xl p-stack-lg flex flex-col h-full relative overflow-hidden">
+<div class="absolute top-2 right-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-300 text-[10px] font-bold px-2 py-0.5 rounded">
+  ₹100 OFF
+</div>
+<div class="flex justify-between items-start mb-6">
+<div class="bg-primary/10 p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined text-[28px]">vital_signs</span>
+</div>
+<span class="text-label-sm px-2 py-1 bg-surface-container-high rounded text-on-surface-variant">T3, T4, TSH</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">Thyroid Profile</h3>
+<p class="text-body-sm text-on-surface-variant mb-4 flex-grow">Evaluate thyroid gland function with high-precision hormonal assaying.</p>
+<div class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold mb-6 flex items-center gap-1">
+  <span class="material-symbols-outlined text-[14px]">home</span> Free Home Sample Collection
+</div>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-outline-variant/30">
+<div class="flex flex-col">
+  <span class="text-[11px] text-on-surface-variant line-through">₹949</span>
+  <div class="text-headline-sm font-bold text-primary">₹849</div>
+</div>
+<button class="text-primary border border-primary px-4 py-1.5 rounded-lg font-label-md hover:bg-primary/5 transition-all">Add to Cart</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-24 bg-surface-container">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg mb-4">Why Choose BIOPATH LAB?</h2>
+<p class="text-on-surface-variant font-body-md max-w-2xl mx-auto">Setting the benchmark in clinical diagnostics with cutting-edge technology and a patient-first approach.</p>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="text-center p-stack-md group">
+<div class="w-16 h-16 bg-surface-container-lowest text-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-md transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-[32px]">task_alt</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-2">99.9% Accuracy</h4>
+<p class="text-body-sm text-on-surface-variant">Driven by automated analysis and rigorous internal quality control protocols.</p>
+</div>
+<div class="text-center p-stack-md group">
+<div class="w-16 h-16 bg-surface-container-lowest text-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-md transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-[32px]">verified_user</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-2">NABL Standards</h4>
+<p class="text-body-sm text-on-surface-variant">Accredited by National and International bodies for consistent lab excellence.</p>
+</div>
+<div class="text-center p-stack-md group">
+<div class="w-16 h-16 bg-surface-container-lowest text-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-md transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-[32px]">house</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Free Home Collection</h4>
+<p class="text-body-sm text-on-surface-variant">Our certified phlebotomists collect samples from your home or office at zero extra cost.</p>
+</div>
+<div class="text-center p-stack-md group">
+<div class="w-16 h-16 bg-surface-container-lowest text-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-md transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-[32px]">speed</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Fast Turnaround</h4>
+<p class="text-body-sm text-on-surface-variant">Get digital reports within 12-24 hours for over 90% of our diagnostic menu.</p>
+</div>
+</div>
+</section>
+<!-- Health Packages Slider -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto overflow-hidden">
+<div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-4">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-2">Health Packages</h2>
+<p class="text-on-surface-variant font-body-md">Curated preventative health assessments for every age group</p>
+</div>
+<div class="flex gap-2">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-surface-container-low transition-all" id="prevBtn">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-surface-container-low transition-all" id="nextBtn">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex gap-gutter overflow-x-auto hide-scrollbar snap-x snap-mandatory pb-8" id="slider">
+<!-- Package Card 1 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-start bg-surface-container-lowest premium-card rounded-2xl overflow-hidden relative">
+<div class="absolute top-2 right-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-300 text-[10px] font-bold px-2 py-0.5 rounded">
+  ₹300 OFF
+</div>
+<div class="h-48 bg-cover bg-center" data-alt="A serene image of an elderly couple walking in a sunlit park, looking healthy and vibrant. The lighting is warm and golden, symbolizing longevity and proactive health management. The style is aspirational and clean, with soft focus on the greenery in the background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_0wUA9fpciEuB9z570XEolala_7h3UcAlm3jm7K22U3cAEoOrvtzBxMBdYsFh23a6uBRpmiIUbdk2MTl370mvK3Wjw9cH1FLSf_k2Bf8CuGEcvz6cZkeaLnicbVceWKY-nQ3ieeG0AwtYWx6TzQZB4AruxfFzyfR5ShN-Pi-RkhYbIoB1GabhKHVw3NLt54kbvPybsUphvSYpF5iykh6lA7n7wZeelhzud9Rp8gpubmogRer1C5xdnV_wXNoIdT6DpWO2ZhWlirU')"></div>
+<div class="p-stack-lg">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-headline-sm text-headline-sm">Senior Citizen Care</h3>
+<span class="bg-secondary-container/20 text-on-secondary-container px-2 py-1 rounded text-label-sm">Best Seller</span>
+</div>
+<ul class="space-y-2 mb-6">
+<li class="flex items-center gap-2 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+                            Cardiac &amp; Liver Status
+                        </li>
+<li class="flex items-center gap-2 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+                            Bone Health (Vitamin D/Calcium)
+                        </li>
+<li class="flex items-center gap-2 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+                            Kidney &amp; Blood Sugar
+                        </li>
+</ul>
+<div class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold mb-6 flex items-center gap-1">
+  <span class="material-symbols-outlined text-[14px]">home</span> Free Home Sample Collection
+</div>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+  <span class="text-[11px] text-on-surface-variant line-through">₹3,299</span>
+  <div class="text-headline-sm font-bold text-primary">₹2,999</div>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-label-md">Book Now</button>
+</div>
+</div>
+</div>
+<!-- Package Card 2 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-start bg-surface-container-lowest premium-card rounded-2xl overflow-hidden relative">
+<div class="absolute top-2 right-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-300 text-[10px] font-bold px-2 py-0.5 rounded">
+  ₹300 OFF
+</div>
+<div class="h-48 bg-cover bg-center" data-alt="A high-angle shot of a colorful assortment of fresh vegetables and fruits alongside a stethoscope on a clean white table. The composition is balanced and modern, emphasizing the link between nutrition and medical diagnostics. Bright, high-key lighting creates a fresh and energetic mood." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvhBHHq2mRhFI75hMnQojLOuxtqzdUcLENWBnps2KQZKCHcrDdZmxzQaa7ZxmxAQM8B5f1Srm5_dtVjtiNBIi0qoPrZJz3m68y-lW4RW0jqMCmbGuAPYoRaQqHgBbWlJWWbFXwMnm0Ao_YgcM2JrTlvEwB1AkS7Yu5h_HXVDGeNA25cTvej2g9ZheUxMIXarB_IXdWFs7Z3RyRDUE_m_16z6T85WIDJAC_P-t0yfWnzXGyv1rG8BomC9Kmbfa1iUhw1IfnVaywl94')"></div>
+<div class="p-stack-lg">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-headline-sm text-headline-sm">Executive Wellness</h3>
+<span class="bg-primary/10 text-primary px-2 py-1 rounded text-label-sm">Popular</span>
+</div>
+<ul class="space-y-2 mb-6">
+<li class="flex items-center gap-2 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary">check_circle</span>
+                            Comprehensive 80+ Parameters
+                        </li>
+<li class="flex items-center gap-2 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary">check_circle</span>
+                            Thyroid &amp; Iron Studies
+                        </li>
+<li class="flex items-center gap-2 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary">check_circle</span>
+                            Lipid &amp; CRP (Heart Health)
+                        </li>
+</ul>
+<div class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold mb-6 flex items-center gap-1">
+  <span class="material-symbols-outlined text-[14px]">home</span> Free Home Sample Collection
+</div>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+  <span class="text-[11px] text-on-surface-variant line-through">₹3,799</span>
+  <div class="text-headline-sm font-bold text-primary">₹3,499</div>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-label-md">Book Now</button>
+</div>
+</div>
+</div>
+<!-- Package Card 3 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-start bg-surface-container-lowest premium-card rounded-2xl overflow-hidden relative">
+<div class="absolute top-2 right-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-300 text-[10px] font-bold px-2 py-0.5 rounded">
+  ₹300 OFF
+</div>
+<div class="h-48 bg-cover bg-center" data-alt="A clean, minimalist workspace with a glass of water, an apple, and a fitness tracker. The scene suggests a balanced lifestyle and health awareness. The lighting is soft and natural, coming from a window, creating a serene and modern aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA5Hz0M15YsTfFKeRVdKyanrt8nWet6nc2dC6hqovgPGFUm3kwgiiqzcx34I9laZYFLfP6PldFVqsI3dCXqNoWODQLBSaptnSkRq-eI8ZV4tR9yZ3-oBBoevmi32S29iSGJoygA_b5eTqYro-30a17wtmrE7DRnycmaX_FSoWR0HkFPeQdmYBrhLr80Tsxd_9Lkfuyz8z40p9kuiOw5oFo2rTZXAWK6Bnx5kgKry2Xv7mavDMWNuDcUi8a7t4AJZ3kV2V3-bsz6vqU')"></div>
+<div class="p-stack-lg">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-headline-sm text-headline-sm">Women's Health Plus</h3>
+<span class="bg-tertiary-container/10 text-tertiary px-2 py-1 rounded text-label-sm">Essential</span>
+</div>
+<ul class="space-y-2 mb-6">
+<li class="flex items-center gap-2 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+                            Hormonal Profile &amp; Iron
+                        </li>
+<li class="flex items-center gap-2 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+                            Cervical Cancer Screening
+                        </li>
+<li class="flex items-center gap-2 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+                            Vitamin B12 &amp; D3
+                        </li>
+</ul>
+<div class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold mb-6 flex items-center gap-1">
+  <span class="material-symbols-outlined text-[14px]">home</span> Free Home Sample Collection
+</div>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+  <span class="text-[11px] text-on-surface-variant line-through">₹2,799</span>
+  <div class="text-headline-sm font-bold text-primary">₹2,499</div>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-label-md">Book Now</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How it Works -->
+<section class="py-24 bg-surface">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary/5 rounded-full -z-10"></div>
+<img class="rounded-3xl shadow-2xl relative z-10 w-full max-w-sm mx-auto" data-alt="A smartphone displaying a clean, professional medical app interface with a 'Success' message and a digital report preview. The phone is held by a hand in a modern living room setting, suggesting ease and convenience. Soft, natural daylight illuminates the scene, giving it a peaceful and reassuring feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJP2eouVhb6eCUggp8sLZLhqXkYLeiZMFA0xXl7ao_7HhA_nXuWjdj5-zfZs-UF2pOo5v6Elh79KDEw8zwXNpP8EtiFhBjjJcVtc4yfLhFk0urMqroqIsCLTtQGMOIL2SFt7dQGEUmrMB4WUFYJzA14oTHrNsLloFUYjxdv6FTlSIAZ4ce7YEfOSr9YoqPdIFk77Ec8snWHGX4-URQbZAwZnofC4KNUshSSKp9SL2kvHnVt1pdlIj2RNFBHpEMWi4Cl74ioIR0ti4"/>
+</div>
+<div class="space-y-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-4">How it Works</h2>
+<p class="text-on-surface-variant font-body-md">Four simple steps to health excellence.</p>
+</div>
+<div class="space-y-8">
+<div class="flex gap-6 items-start">
+<div class="flex-shrink-0 w-12 h-12 bg-primary text-on-primary rounded-xl flex items-center justify-center font-bold text-lg">1</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-1">Book Online</h4>
+<p class="text-body-sm text-on-surface-variant">Select your required tests or health packages from our extensive menu and choose a convenient time slot.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="flex-shrink-0 w-12 h-12 bg-primary text-on-primary rounded-xl flex items-center justify-center font-bold text-lg">2</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-1">Sample Collection</h4>
+<p class="text-body-sm text-on-surface-variant">Our certified phlebotomists will visit your home or office for professional, painless sample collection.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="flex-shrink-0 w-12 h-12 bg-primary text-on-primary rounded-xl flex items-center justify-center font-bold text-lg">3</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-1">Lab Processing</h4>
+<p class="text-body-sm text-on-surface-variant">Your samples are processed in our state-of-the-art automated laboratories under strict quality controls.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="flex-shrink-0 w-12 h-12 bg-primary text-on-primary rounded-xl flex items-center justify-center font-bold text-lg">4</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-1">Digital Reports</h4>
+<p class="text-body-sm text-on-surface-variant">Receive encrypted, easy-to-read digital reports directly on your email and through our patient portal.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto transition-colors duration-300" id="contact-section">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
+<!-- Left side: Contact Details -->
+<div class="bg-surface-container-lowest dark:bg-inverse-surface premium-card rounded-3xl p-8 md:p-12 flex flex-col justify-between transition-colors duration-300">
+<div>
+<span class="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 text-primary dark:text-primary-fixed-dim rounded-full text-label-sm font-label-sm mb-6">
+<span class="material-symbols-outlined text-[16px]">contact_support</span>
+                    Contact Information
+                </span>
+<h2 class="font-display-lg text-[32px] md:text-[40px] leading-tight mb-4 text-on-surface dark:text-inverse-on-surface">
+                    Get in Touch with Us
+                </h2>
+<p class="text-body-md text-on-surface-variant dark:text-outline-variant mb-8">
+                    Have questions about diagnostic tests, home sample collection, or reports? Reach out to Sameer Rasool and the team. We are here to support your health journey.
+                </p>
+<div class="space-y-6">
+<!-- Owner/Director Info -->
+<div class="flex items-start gap-4">
+<div class="bg-primary/10 text-primary dark:text-primary-fixed-dim p-3 rounded-xl flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">person</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-body-md font-bold text-on-surface dark:text-inverse-on-surface">Owner / Contact Person</h4>
+<p class="text-body-md text-on-surface-variant dark:text-outline-variant font-medium">Sameer Rasool</p>
+</div>
+</div>
+<!-- Phone Info -->
+<div class="flex items-start gap-4">
+<div class="bg-primary/10 text-primary dark:text-primary-fixed-dim p-3 rounded-xl flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">call</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-body-md font-bold text-on-surface dark:text-inverse-on-surface">Phone Number</h4>
+<a class="text-headline-sm font-bold text-primary dark:text-primary-fixed-dim hover:underline" href="tel:+917889826727">+91 7889826727</a>
+<p class="text-body-sm text-on-surface-variant dark:text-outline-variant">Click to call directly</p>
+</div>
+</div>
+<!-- Address Info -->
+<div class="flex items-start gap-4">
+<div class="bg-primary/10 text-primary dark:text-primary-fixed-dim p-3 rounded-xl flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">location_on</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-body-md font-bold text-on-surface dark:text-inverse-on-surface">Lab Address</h4>
+<p class="text-body-md text-on-surface-variant dark:text-outline-variant leading-relaxed">
+                          Old Bridge, Bazulla,<br>Srinagar, Jammu & Kashmir, India
+                        </p>
+</div>
+</div>
+</div>
+</div>
+<!-- WhatsApp Chat integration -->
+<div class="pt-8 mt-8 border-t border-outline-variant/30 flex flex-wrap gap-4 items-center">
+<a class="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-xl font-label-md text-body-md flex items-center justify-center gap-3 hover:opacity-95 shadow-lg active:scale-95 transition-all w-full sm:w-auto" href="https://wa.me/917889826727" target="_blank">
+<!-- SVG WhatsApp Icon -->
+<svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.966C16.69 1.976 14.218.953 11.603.953c-5.439 0-9.859 4.374-9.863 9.8.001 1.93.511 3.811 1.481 5.518L2.216 22l5.85-1.543c-.447.33-.896.67-1.419.697z"/>
+</svg>
+                    Chat on WhatsApp
+                  </a>
+<a class="border border-outline-variant text-on-surface dark:text-inverse-on-surface hover:bg-surface-container-low px-8 py-4 rounded-xl font-label-md text-body-md flex items-center justify-center gap-2 transition-all w-full sm:w-auto" href="tel:+917889826727">
+<span class="material-symbols-outlined">call</span> Call +91 7889826727
+                  </a>
+</div>
+</div>
+<!-- Right side: Maps Container -->
+<div class="bg-surface-container-lowest dark:bg-inverse-surface premium-card rounded-3xl overflow-hidden flex flex-col justify-between h-[500px] md:h-auto min-h-[400px] transition-colors duration-300">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.8117769974245!2d74.801648315243!3d34.05374498060594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18fb042bf9e55%3A0xe212879555c889f8!2sBarzulla%2520Bridge%252C%2520Srinagar!5e0!3m2!1sen!2sin!4v1687250000000!5m2!1sen!2sin" class="w-full h-full border-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface w-full mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 mb-6">
+<img alt="Logo" class="h-8 w-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTGumKKcw_UhP6SA2FF1dYBNb8dXw0YVT9qrLs3zJ2aWCmFHCCh3fQnDlZM5srw9u-z0Ch9bAUogSVnyTrFigD4iPE3x8GyAxdaNPsWBS1_8kJQfHNC35F3LX4I0IM7qoghsSJLN4dm5lf35U-MfsPA41sTV6i3C9OWjF-Yi9KQfQl9wldP4lILBvm5kpGtbJz45-1vwqEDsrRlJfHuL92oXw13huje5_s61y1I1yJt69GpNXGCN9jH2IvrHeoTYH66iwMirCaJS0"/>
+<span class="font-headline-md text-headline-md text-primary font-bold">BIOPATH LAB</span>
+</div>
+<p class="text-on-surface-variant dark:text-surface-variant text-body-sm mb-6 leading-relaxed">
+                    BIOPATH LAB<br>
+                    Old Bridge, Bazulla, Srinagar,<br>
+                    Jammu & Kashmir, India<br>
+                    <strong>Phone:</strong> +91 7889826727
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="tel:+917889826727" aria-label="Call Us">
+<span class="material-symbols-outlined">call</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-emerald-600 hover:text-white transition-all" href="https://wa.me/917889826727" target="_blank" aria-label="WhatsApp Support">
+<span class="material-symbols-outlined">chat</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="font-label-md text-label-md mb-6 uppercase tracking-wider text-on-surface">Services</h5>
+<ul class="space-y-4">
+<li><a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-200" href="#tests-section">Test Menu</a></li>
+<li><a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-200" href="#contact-section">Specialty Clinics</a></li>
+<li><a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-200" href="#slider">Health Packages</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-label-md mb-6 uppercase tracking-wider text-on-surface">Support</h5>
+<ul class="space-y-4">
+<li><a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-200" href="tel:+917889826727">Contact Sameer Rasool</a></li>
+<li><a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-200" href="https://wa.me/917889826727" target="_blank">WhatsApp Chat Support</a></li>
+<li><a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-200" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-label-md mb-6 uppercase tracking-wider text-on-surface">Newsletter</h5>
+<p class="text-body-sm text-on-surface-variant dark:text-surface-variant mb-4">Stay updated with health tips and new package launches.</p>
+<div class="flex flex-col gap-2">
+<input class="rounded-lg border-outline-variant bg-surface-container-low dark:bg-inverse-surface/50 text-body-sm" placeholder="Your email address" type="email"/>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-lg font-label-md w-full">Subscribe</button>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 py-8 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant">© 2026 BIOPATH LAB. Managed by Sameer Rasool. All Rights Reserved. NABL &amp; CAP Certified.</p>
+</div>
+</footer>
+
+<!-- Cart Drawer -->
+<div id="cartDrawer" class="fixed inset-0 z-50 hidden">
+  <div class="absolute inset-0 bg-black/50 transition-opacity" id="cartOverlay"></div>
+  <div class="absolute inset-y-0 right-0 max-w-full flex">
+    <div class="w-screen max-w-md bg-surface dark:bg-inverse-surface text-on-surface dark:text-inverse-on-surface shadow-2xl flex flex-col transition-colors duration-300">
+      <div class="p-6 border-b border-outline-variant/30 flex justify-between items-center bg-surface-container dark:bg-surface-dim">
+        <h3 class="font-headline-sm text-headline-sm flex items-center gap-2">
+          <span class="material-symbols-outlined">shopping_cart</span> Your Cart
+        </h3>
+        <button id="closeCartBtn" class="text-on-surface-variant hover:text-on-surface dark:text-outline-variant dark:hover:text-inverse-on-surface">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div class="flex-1 overflow-y-auto p-6 space-y-4" id="cartItemsContainer"></div>
+      <div class="p-6 border-t border-outline-variant/30 bg-surface-container dark:bg-surface-dim">
+        <div class="flex justify-between items-center mb-6">
+          <span class="font-body-md text-on-surface-variant dark:text-outline-variant">Total Amount:</span>
+          <span class="font-headline-sm text-headline-sm font-bold text-primary dark:text-on-primary-fixed-variant" id="cartTotal">₹0</span>
+        </div>
+        <button id="checkoutBtn" class="w-full bg-primary-container text-on-primary-container py-3.5 rounded-lg font-label-md hover:opacity-90 active:scale-95 transition-all flex justify-center items-center gap-2">
+          Proceed to Booking <span class="material-symbols-outlined">arrow_forward</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Booking Modal -->
+<div id="bookingModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+  <div class="absolute inset-0 bg-black/65" id="bookingOverlay"></div>
+  <div class="relative bg-surface dark:bg-inverse-surface text-on-surface dark:text-inverse-on-surface w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] transition-colors duration-300">
+    <div class="p-6 border-b border-outline-variant/30 flex justify-between items-center bg-surface-container dark:bg-surface-dim">
+      <div>
+        <h3 class="font-headline-sm text-headline-sm" id="bookingStepTitle">Book a Test</h3>
+        <p class="text-body-sm text-on-surface-variant dark:text-outline-variant" id="bookingStepSubtitle">Step 1 of 3: Patient Information</p>
+      </div>
+      <button id="closeBookingBtn" class="text-on-surface-variant hover:text-on-surface">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    
+    <div class="px-6 py-3 bg-surface-container-low dark:bg-surface-variant/30 flex gap-2">
+      <div class="flex-1 h-2 rounded bg-primary" id="stepBar1"></div>
+      <div class="flex-1 h-2 rounded bg-outline-variant/35" id="stepBar2"></div>
+      <div class="flex-1 h-2 rounded bg-outline-variant/35" id="stepBar3"></div>
+    </div>
+
+    <div class="flex-1 overflow-y-auto p-6">
+      <form id="bookingForm" class="space-y-6">
+        <!-- Step 1: Patient Information -->
+        <div id="bookingStep1" class="space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-label-md mb-2 text-on-surface dark:text-inverse-on-surface">Patient Full Name*</label>
+              <input type="text" id="patientName" required class="w-full rounded-lg border-outline-variant bg-surface-container-lowest dark:bg-surface-container/10 focus:border-primary focus:ring-2 focus:ring-primary/10 font-body-md text-on-surface dark:text-inverse-on-surface" placeholder="Enter patient's name"/>
+            </div>
+            <div>
+              <label class="block text-label-md mb-2 text-on-surface dark:text-inverse-on-surface">Phone Number*</label>
+              <input type="tel" id="patientPhone" required class="w-full rounded-lg border-outline-variant bg-surface-container-lowest dark:bg-surface-container/10 focus:border-primary focus:ring-2 focus:ring-primary/10 font-body-md text-on-surface dark:text-inverse-on-surface" placeholder="10-digit mobile number"/>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div>
+              <label class="block text-label-md mb-2 text-on-surface dark:text-inverse-on-surface">Age*</label>
+              <input type="number" id="patientAge" required min="1" max="120" class="w-full rounded-lg border-outline-variant bg-surface-container-lowest dark:bg-surface-container/10 focus:border-primary focus:ring-2 focus:ring-primary/10 font-body-md text-on-surface dark:text-inverse-on-surface" placeholder="Years"/>
+            </div>
+            <div>
+              <label class="block text-label-md mb-2 text-on-surface dark:text-inverse-on-surface">Gender*</label>
+              <select id="patientGender" required class="w-full rounded-lg border-outline-variant bg-surface-container-lowest dark:bg-surface-container/10 focus:border-primary focus:ring-2 focus:ring-primary/10 font-body-md text-on-surface dark:text-inverse-on-surface">
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-label-md mb-2 text-on-surface dark:text-inverse-on-surface">Email Address</label>
+              <input type="email" id="patientEmail" class="w-full rounded-lg border-outline-variant bg-surface-container-lowest dark:bg-surface-container/10 focus:border-primary focus:ring-2 focus:ring-primary/10 font-body-md text-on-surface dark:text-inverse-on-surface" placeholder="name@example.com"/>
+            </div>
+          </div>
+        </div>
+
+                <!-- Step 2: Date & Slot Selection -->
+        <div id="bookingStep2" class="space-y-4 hidden">
+          <div>
+            <label class="block text-label-md mb-2 text-on-surface dark:text-inverse-on-surface">Sample Collection Mode*</label>
+            <div class="grid grid-cols-2 gap-4">
+              <label class="border border-primary bg-primary/5 dark:bg-primary-fixed-dim/10 rounded-lg p-4 flex items-center gap-3 cursor-pointer" id="modeHomeLabel">
+                <input type="radio" name="collectionMode" value="home" checked class="text-primary focus:ring-primary"/>
+                <div>
+                  <div class="text-body-md font-bold text-on-surface dark:text-inverse-on-surface">Home Collection (FREE)</div>
+                  <div class="text-body-sm text-on-surface-variant dark:text-outline-variant">Phlebotomist visits you at no extra charge</div>
+                </div>
+              </label>
+              <label class="border border-outline-variant rounded-lg p-4 flex items-center gap-3 cursor-pointer" id="modeLabLabel">
+                <input type="radio" name="collectionMode" value="lab" class="text-primary focus:ring-primary"/>
+                <div>
+                  <div class="text-body-md font-bold text-on-surface dark:text-inverse-on-surface">Lab Walk-in</div>
+                  <div class="text-body-sm text-on-surface-variant dark:text-outline-variant">Visit Bazulla clinic</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div id="homeAddressContainer">
+            <label class="block text-label-md mb-2 text-on-surface dark:text-inverse-on-surface">Address for Sample Collection*</label>
+            <textarea id="patientAddress" required class="w-full rounded-lg border-outline-variant bg-surface-container-lowest dark:bg-surface-container/10 focus:border-primary focus:ring-2 focus:ring-primary/10 font-body-md text-on-surface dark:text-inverse-on-surface" rows="2" placeholder="House/Flat No, Street, Landmark, Pincode"></textarea>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-label-md mb-2 text-on-surface dark:text-inverse-on-surface">Appointment Date*</label>
+              <input type="date" id="bookingDate" class="w-full rounded-lg border-outline-variant bg-surface-container-lowest dark:bg-surface-container/10 focus:border-primary focus:ring-2 focus:ring-primary/10 font-body-md text-on-surface dark:text-inverse-on-surface"/>
+            </div>
+            <div>
+              <label class="block text-label-md mb-2 text-on-surface dark:text-inverse-on-surface">Available Time Slot*</label>
+              <select id="bookingSlot" class="w-full rounded-lg border-outline-variant bg-surface-container-lowest dark:bg-surface-container/10 focus:border-primary focus:ring-2 focus:ring-primary/10 font-body-md text-on-surface dark:text-inverse-on-surface">
+                <option value="">Choose a slot</option>
+                <option value="07:00 AM - 09:00 AM">07:00 AM - 09:00 AM (Recommended for Fasting)</option>
+                <option value="09:00 AM - 11:00 AM">09:00 AM - 11:00 AM</option>
+                <option value="11:00 AM - 01:00 PM">11:00 AM - 01:00 PM</option>
+                <option value="01:00 PM - 03:00 PM">01:00 PM - 03:00 PM</option>
+                <option value="03:00 PM - 05:00 PM">03:00 PM - 05:00 PM</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Booking Summary -->
+        <div id="bookingStep3" class="space-y-4 hidden text-center py-6">
+          <div class="w-16 h-16 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="material-symbols-outlined text-[36px]">check_circle</span>
+          </div>
+          <h4 class="font-headline-md text-headline-md text-secondary">Booking Submitted!</h4>
+          <p class="text-body-md text-on-surface-variant dark:text-outline-variant max-w-md mx-auto">
+            Your appointment request has been recorded. For quick confirmation, please click the button below to send your Booking ID to Sameer Rasool on WhatsApp.
+          </p>
+          <div class="pt-4 flex justify-center">
+            <a id="whatsappConfirmBtn" href="https://wa.me/917889826727" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-3.5 rounded-xl font-label-md flex items-center justify-center gap-3 hover:opacity-95 shadow-md active:scale-95 transition-all w-full sm:w-auto text-body-md">
+              <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.966C16.69 1.976 14.218.953 11.603.953c-5.439 0-9.859 4.374-9.863 9.8.001 1.93.511 3.811 1.481 5.518L2.216 22l5.85-1.543c-.447.33-.896.67-1.419.697z"/></svg>
+              Send Request on WhatsApp
+            </a>
+          </div>
+          <div class="bg-surface-container-low dark:bg-surface-variant/30 rounded-xl p-4 max-w-sm mx-auto text-left space-y-2 mt-6">
+            <div class="flex justify-between"><span class="text-body-sm text-on-surface-variant dark:text-outline-variant">Booking ID:</span><span class="font-bold font-body-sm text-on-surface dark:text-inverse-on-surface" id="summaryBookingId">BPB-10294</span></div>
+            <div class="flex justify-between"><span class="text-body-sm text-on-surface-variant dark:text-outline-variant">Patient Name:</span><span class="font-bold font-body-sm text-on-surface dark:text-inverse-on-surface" id="summaryName">John Doe</span></div>
+            <div class="flex justify-between"><span class="text-body-sm text-on-surface-variant dark:text-outline-variant">Date & Slot:</span><span class="font-bold font-body-sm text-on-surface dark:text-inverse-on-surface" id="summaryDateTime">June 21, 2026</span></div>
+            <div class="flex justify-between border-t border-outline-variant/30 pt-2 font-bold"><span class="font-body-sm text-on-surface dark:text-inverse-on-surface">Amount:</span><span class="font-body-sm text-primary dark:text-primary-fixed-dim" id="summaryAmount">₹1,999</span></div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="p-6 border-t border-outline-variant/30 bg-surface-container dark:bg-surface-dim flex justify-between">
+      <button id="backBookingBtn" class="border border-outline-variant text-on-surface dark:text-inverse-on-surface hover:bg-surface-container-low px-6 py-2.5 rounded-lg font-label-md hidden">Back</button>
+      <div class="flex-grow"></div>
+      <button id="nextBookingBtn" class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-label-md hover:opacity-90 active:scale-95 transition-all">Continue</button>
+    </div>
+  </div>
+</div>
+
+<!-- Report Modal -->
+<div id="reportModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+  <div class="absolute inset-0 bg-black/65" id="reportOverlay"></div>
+  <div class="relative bg-surface dark:bg-inverse-surface text-on-surface dark:text-inverse-on-surface w-full max-w-3xl rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] transition-colors duration-300">
+    <div class="p-6 border-b border-outline-variant/30 flex justify-between items-center bg-surface-container dark:bg-surface-dim">
+      <h3 class="font-headline-sm text-headline-sm flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary">analytics</span> Diagnostic Report Preview
+      </h3>
+      <button id="closeReportBtn" class="text-on-surface-variant hover:text-on-surface dark:text-outline-variant dark:hover:text-inverse-on-surface">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    
+    <div class="flex-1 overflow-y-auto p-8 bg-white text-gray-900" id="reportPrintArea">
+      <div class="flex justify-between items-start border-b-2 border-blue-600 pb-6">
+        <div>
+          <div class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">CXN</div>
+            <div>
+              <h1 class="text-xl font-bold text-blue-600 tracking-tight">CXN BIOPATH LABS</h1>
+              <p class="text-[10px] text-gray-500 font-semibold uppercase tracking-wider">Accurate Diagnostics. Trusted Healthcare.</p>
+            </div>
+          </div>
+          <p class="text-[11px] text-gray-500 mt-2">Old Bridge, Bazulla, Srinagar, J&K, India</p>
+          <p class="text-[11px] text-gray-500">Email: reports@cxnbiopath.com | Phone: +91 7889826727</p>
+        </div>
+        <div class="text-right">
+          <div class="inline-block border border-green-600 text-green-700 px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">
+            NABL & CAP Certified
+          </div>
+          <p class="text-xs text-gray-500 mt-2 font-bold">Lab ID: <span id="reportLabId" class="text-gray-900">BP-12345</span></p>
+          <p class="text-xs text-gray-500">Date: <span id="reportDate">June 18, 2026</span></p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 py-6 border-b border-gray-200 text-xs">
+        <div>
+          <p class="text-gray-500 font-semibold">Patient Name</p>
+          <p class="font-bold text-gray-900" id="reportPatientName">John Doe</p>
+        </div>
+        <div>
+          <p class="text-gray-500 font-semibold">Age / Gender</p>
+          <p class="font-bold text-gray-900"><span id="reportPatientAge">42</span> Yrs / <span id="reportPatientGender">Male</span></p>
+        </div>
+        <div>
+          <p class="text-gray-500 font-semibold">Referred By</p>
+          <p class="font-bold text-gray-900">Dr. Sarah Jenkins, MD</p>
+        </div>
+        <div>
+          <p class="text-gray-500 font-semibold">Sample Received</p>
+          <p class="font-bold text-gray-900" id="reportSampleDate">June 17, 2026 08:30 AM</p>
+        </div>
+      </div>
+
+      <div class="py-6">
+        <h3 class="text-xs font-bold text-gray-800 border-b border-gray-100 pb-2 mb-4">DEPARTMENT OF BIOCHEMISTRY</h3>
+        <table class="w-full text-left text-[11px]">
+          <thead>
+            <tr class="bg-gray-50 text-gray-500 font-bold border-b border-gray-200">
+              <th class="py-2.5 px-3">Test / Parameter Name</th>
+              <th class="py-2.5 px-3 text-center">Value</th>
+              <th class="py-2.5 px-3 text-center">Unit</th>
+              <th class="py-2.5 px-3 text-center">Biological Ref Range</th>
+              <th class="py-2.5 px-3 text-right">Status</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100" id="reportTableBody">
+            <tr class="hover:bg-gray-50/50">
+              <td class="py-3 px-3 font-semibold text-gray-800">Fasting Blood Glucose</td>
+              <td class="py-3 px-3 text-center font-bold text-red-600">105.00</td>
+              <td class="py-3 px-3 text-center text-gray-600">mg/dL</td>
+              <td class="py-3 px-3 text-center text-gray-600">70.00 - 100.00</td>
+              <td class="py-3 px-3 text-right">
+                <span class="bg-red-50 text-red-700 border border-red-200 px-2 py-0.5 rounded text-[10px] font-bold">HIGH</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50/50">
+              <td class="py-3 px-3 font-semibold text-gray-800">Hemoglobin (Hb)</td>
+              <td class="py-3 px-3 text-center font-bold text-gray-800">14.50</td>
+              <td class="py-3 px-3 text-center text-gray-600">g/dL</td>
+              <td class="py-3 px-3 text-center text-gray-600">13.80 - 17.20</td>
+              <td class="py-3 px-3 text-right">
+                <span class="bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded text-[10px] font-bold">NORMAL</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50/50">
+              <td class="py-3 px-3 font-semibold text-gray-800">Thyroid Stimulating Hormone (TSH)</td>
+              <td class="py-3 px-3 text-center font-bold text-gray-800">2.10</td>
+              <td class="py-3 px-3 text-center text-gray-600">uIU/mL</td>
+              <td class="py-3 px-3 text-center text-gray-600">0.40 - 4.50</td>
+              <td class="py-3 px-3 text-right">
+                <span class="bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded text-[10px] font-bold">NORMAL</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50/50">
+              <td class="py-3 px-3 font-semibold text-gray-800">Total Cholesterol</td>
+              <td class="py-3 px-3 text-center font-bold text-amber-600">215.00</td>
+              <td class="py-3 px-3 text-center text-gray-600">mg/dL</td>
+              <td class="py-3 px-3 text-center text-gray-600">&lt; 200.00</td>
+              <td class="py-3 px-3 text-right">
+                <span class="bg-amber-50 text-amber-700 border border-amber-200 px-2 py-0.5 rounded text-[10px] font-bold">BORDERLINE</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-8 border-t border-gray-200 pt-6 flex justify-between items-center text-xs">
+        <div>
+          <p class="font-bold text-gray-800">*** END OF REPORT ***</p>
+          <p class="text-gray-500 mt-1">This report is validated electronically.</p>
+        </div>
+        <div class="flex gap-6 text-center text-gray-700">
+          <div>
+            <div class="border-b border-gray-300 pb-1 text-[11px] italic font-semibold text-blue-700">Amit Sharma</div>
+            <p class="font-bold mt-1 text-[10px]">Dr. Amit Sharma, MD</p>
+            <p class="text-[9px] text-gray-400">Consultant Pathologist</p>
+          </div>
+          <div>
+            <div class="border-b border-gray-300 pb-1 text-[11px] italic font-semibold text-blue-700">Sarah Jenkins</div>
+            <p class="font-bold mt-1 text-[10px]">Dr. Sarah Jenkins, MD</p>
+            <p class="text-[9px] text-gray-400">Chief Biochemistry</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="p-6 border-t border-outline-variant/30 bg-surface-container dark:bg-surface-dim flex justify-between gap-4">
+      <button id="printReportBtn" class="border border-outline-variant text-on-surface dark:text-inverse-on-surface hover:bg-surface-container-low px-6 py-2.5 rounded-lg font-label-md flex items-center gap-2">
+        <span class="material-symbols-outlined text-[20px]">print</span> Print
+      </button>
+      <button id="downloadReportPdfBtn" class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-label-md hover:opacity-90 flex items-center gap-2">
+        <span class="material-symbols-outlined text-[20px]">download</span> Download PDF
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+    // Simple slider interaction
+    const slider = document.getElementById('slider');
+    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById('prevBtn');
+
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            slider.scrollBy({ left: 350, behavior: 'smooth' });
+        });
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            slider.scrollBy({ left: -350, behavior: 'smooth' });
+        });
+    }
+
+    // Sticky Navbar subtle effect
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('py-2');
+            nav.classList.remove('py-4');
+        } else {
+            nav.classList.remove('py-2');
+        }
+    });
+
+    // ==========================================
+    // 1. Sleek Dark Mode Logic
+    // ==========================================
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+        if (themeToggleBtn) themeToggleBtn.innerHTML = '<span class="material-symbols-outlined">light_mode</span>';
+    } else {
+        document.documentElement.classList.remove('dark');
+        if (themeToggleBtn) themeToggleBtn.innerHTML = '<span class="material-symbols-outlined">dark_mode</span>';
+    }
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                themeToggleBtn.innerHTML = '<span class="material-symbols-outlined">dark_mode</span>';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                themeToggleBtn.innerHTML = '<span class="material-symbols-outlined">light_mode</span>';
+            }
+        });
+    }
+
+    // ==========================================
+    // 2. Shopping Cart System
+    // ==========================================
+    let cart = JSON.parse(localStorage.getItem('biopath_cart')) || [];
+    const cartDrawer = document.getElementById('cartDrawer');
+    const cartOverlay = document.getElementById('cartOverlay');
+    const closeCartBtn = document.getElementById('closeCartBtn');
+    const cartItemsContainer = document.getElementById('cartItemsContainer');
+    const cartTotal = document.getElementById('cartTotal');
+    const cartBadge = document.getElementById('cartBadge');
+    const openCartBtn = document.getElementById('openCartBtn');
+
+    function saveCart() {
+        localStorage.setItem('biopath_cart', JSON.stringify(cart));
+        updateCartUI();
+    }
+
+    window.addToCart = function(title, price) {
+        if (cart.some(item => item.title === title)) {
+            showToast(`${title} is already in your cart!`);
+            return;
+        }
+        cart.push({ title, price });
+        saveCart();
+        showToast(`Added ${title} to cart.`);
+    }
+
+    window.removeFromCart = function(title) {
+        cart = cart.filter(item => item.title !== title);
+        saveCart();
+    }
+
+    function updateCartUI() {
+        if (cartBadge) {
+            cartBadge.textContent = cart.length;
+            if (cart.length > 0) {
+                cartBadge.classList.remove('hidden');
+            } else {
+                cartBadge.classList.add('hidden');
+            }
+        }
+        
+        cartItemsContainer.innerHTML = '';
+        if (cart.length === 0) {
+            cartItemsContainer.innerHTML = `
+                <div class="flex flex-col items-center justify-center h-64 text-on-surface-variant dark:text-outline-variant text-center">
+                    <span class="material-symbols-outlined text-[48px] mb-4 opacity-50">shopping_cart_off</span>
+                    <p class="font-body-md">Your cart is empty</p>
+                    <button onclick="closeCart(); document.getElementById('tests-section').scrollIntoView({behavior: 'smooth'})" class="text-primary dark:text-primary-fixed-dim mt-2 font-label-md hover:underline">Browse Tests</button>
+                </div>
+            `;
+        } else {
+            cart.forEach(item => {
+                const itemEl = document.createElement('div');
+                itemEl.className = 'flex justify-between items-center bg-surface-container-low dark:bg-surface-container/50 p-4 rounded-xl border border-outline-variant/20';
+                itemEl.innerHTML = `
+                    <div class="flex-grow pr-4">
+                        <h4 class="font-body-sm font-bold text-on-surface dark:text-inverse-on-surface">${item.title}</h4>
+                        <p class="text-body-sm text-primary dark:text-primary-fixed-dim font-bold mt-1">₹${item.price.toLocaleString()}</p>
+                    </div>
+                    <button class="text-error hover:opacity-80 p-2" onclick="removeFromCart('${item.title}')">
+                        <span class="material-symbols-outlined text-[20px]">delete</span>
+                    </button>
+                `;
+                cartItemsContainer.appendChild(itemEl);
+            });
+        }
+
+        const total = cart.reduce((sum, item) => sum + item.price, 0);
+        cartTotal.textContent = `₹${total.toLocaleString()}`;
+    }
+
+    window.openCart = function() {
+        cartDrawer.classList.remove('hidden');
+    }
+
+    window.closeCart = function() {
+        cartDrawer.classList.add('hidden');
+    }
+    
+    if (openCartBtn) openCartBtn.addEventListener('click', openCart);
+    if (closeCartBtn) closeCartBtn.addEventListener('click', closeCart);
+    if (cartOverlay) cartOverlay.addEventListener('click', closeCart);
+
+    // Dynamic Binding for Test Cards & Package Cards
+    document.querySelectorAll('.premium-card').forEach(card => {
+        const btn = card.querySelector('button');
+        if (btn) {
+            const btnText = btn.textContent.trim();
+            if (btnText === 'Add to Cart') {
+                btn.addEventListener('click', () => {
+                    const title = card.querySelector('h3').textContent.trim();
+                    const priceText = card.querySelector('.text-primary.font-bold').textContent.trim();
+                    const price = parseInt(priceText.replace('₹', '').replace(',', ''));
+                    addToCart(title, price);
+                });
+            } else if (btnText === 'Book Now') {
+                btn.addEventListener('click', () => {
+                    const title = card.querySelector('h3').textContent.trim();
+                    const priceText = card.querySelector('.text-primary.font-bold').textContent.trim();
+                    const price = parseInt(priceText.replace('₹', '').replace(',', ''));
+                    addToCart(title, price);
+                    openCart();
+                });
+            }
+        }
+    });
+
+    // ==========================================
+    // 3. Step-by-Step Booking System
+    // ==========================================
+    let currentStep = 1;
+    const bookingModal = document.getElementById('bookingModal');
+    const bookingOverlay = document.getElementById('bookingOverlay');
+    const closeBookingBtn = document.getElementById('closeBookingBtn');
+    const bookingForm = document.getElementById('bookingForm');
+    const backBookingBtn = document.getElementById('backBookingBtn');
+    const nextBookingBtn = document.getElementById('nextBookingBtn');
+    const checkoutBtn = document.getElementById('checkoutBtn');
+    const bookTestNavBtn = document.getElementById('bookTestNavBtn');
+    const heroBookBtn = document.querySelector('header button.bg-primary-container');
+
+    const step1 = document.getElementById('bookingStep1');
+    const step2 = document.getElementById('bookingStep2');
+    const step3 = document.getElementById('bookingStep3');
+    const stepBar1 = document.getElementById('stepBar1');
+    const stepBar2 = document.getElementById('stepBar2');
+    const stepBar3 = document.getElementById('stepBar3');
+
+    const bookingStepTitle = document.getElementById('bookingStepTitle');
+    const bookingStepSubtitle = document.getElementById('bookingStepSubtitle');
+
+    const collectionModes = document.getElementsByName('collectionMode');
+    const homeAddressContainer = document.getElementById('homeAddressContainer');
+    const patientAddress = document.getElementById('patientAddress');
+
+    collectionModes.forEach(radio => {
+        radio.addEventListener('change', (e) => {
+            if (e.target.value === 'home') {
+                homeAddressContainer.classList.remove('hidden');
+                patientAddress.setAttribute('required', 'true');
+                document.getElementById('modeHomeLabel').className = "border border-primary bg-primary/5 dark:bg-primary-fixed-dim/10 rounded-lg p-4 flex items-center gap-3 cursor-pointer";
+                document.getElementById('modeLabLabel').className = "border border-outline-variant rounded-lg p-4 flex items-center gap-3 cursor-pointer";
+            } else {
+                homeAddressContainer.classList.add('hidden');
+                patientAddress.removeAttribute('required');
+                document.getElementById('modeHomeLabel').className = "border border-outline-variant rounded-lg p-4 flex items-center gap-3 cursor-pointer";
+                document.getElementById('modeLabLabel').className = "border border-primary bg-primary/5 dark:bg-primary-fixed-dim/10 rounded-lg p-4 flex items-center gap-3 cursor-pointer";
+            }
+        });
+    });
+
+    window.openBooking = function() {
+        if (cart.length === 0) {
+            showToast("Please add at least one test to your cart first!");
+            openCart();
+            return;
+        }
+        closeCart();
+        bookingModal.classList.remove('hidden');
+        setStep(1);
+    }
+
+    window.closeBooking = function() {
+        bookingModal.classList.add('hidden');
+    }
+
+    if (checkoutBtn) checkoutBtn.addEventListener('click', openBooking);
+    if (bookTestNavBtn) bookTestNavBtn.addEventListener('click', openBooking);
+    if (heroBookBtn) {
+        heroBookBtn.addEventListener('click', () => {
+            document.getElementById('tests-section').scrollIntoView({ behavior: 'smooth' });
+            showToast("Please pick a test to add to your cart!");
+        });
+    }
+    if (closeBookingBtn) closeBookingBtn.addEventListener('click', closeBooking);
+    if (bookingOverlay) bookingOverlay.addEventListener('click', closeBooking);
+
+    function setStep(step) {
+        currentStep = step;
+        step1.classList.add('hidden');
+        step2.classList.add('hidden');
+        step3.classList.add('hidden');
+        
+        stepBar1.className = "flex-1 h-2 rounded bg-outline-variant/35";
+        stepBar2.className = "flex-1 h-2 rounded bg-outline-variant/35";
+        stepBar3.className = "flex-1 h-2 rounded bg-outline-variant/35";
+        
+        if (step === 1) {
+            step1.classList.remove('hidden');
+            stepBar1.className = "flex-1 h-2 rounded bg-primary";
+            bookingStepTitle.textContent = "Book a Test";
+            bookingStepSubtitle.textContent = "Step 1 of 3: Patient Information";
+            backBookingBtn.classList.add('hidden');
+            nextBookingBtn.textContent = "Continue";
+        } else if (step === 2) {
+            step2.classList.remove('hidden');
+            stepBar1.className = "flex-1 h-2 rounded bg-primary";
+            stepBar2.className = "flex-1 h-2 rounded bg-primary";
+            bookingStepTitle.textContent = "Schedule Appointment";
+            bookingStepSubtitle.textContent = "Step 2 of 3: Date & Slot Selection";
+            backBookingBtn.classList.remove('hidden');
+            nextBookingBtn.textContent = "Confirm Booking";
+        } else if (step === 3) {
+            step3.classList.remove('hidden');
+            stepBar1.className = "flex-1 h-2 rounded bg-primary";
+            stepBar2.className = "flex-1 h-2 rounded bg-primary";
+            stepBar3.className = "flex-1 h-2 rounded bg-primary";
+            bookingStepTitle.textContent = "Appointment Confirmed";
+            bookingStepSubtitle.textContent = "Complete!";
+            backBookingBtn.classList.add('hidden');
+            nextBookingBtn.textContent = "Close Window";
+            
+            // Fill in summary
+            const bookingId = "BPB-" + Math.floor(10000 + Math.random() * 90000);
+            document.getElementById('summaryBookingId').textContent = bookingId;
+            document.getElementById('summaryName').textContent = document.getElementById('patientName').value;
+            
+            const waConfirmBtn = document.getElementById('whatsappConfirmBtn');
+            if (waConfirmBtn) {
+                const message = encodeURIComponent(`Hi BIOPATH LAB, I would like to book a test request.\nBooking ID: ${bookingId}\nPatient: ${document.getElementById('patientName').value}\nPhone: ${document.getElementById('patientPhone').value}\nDate/Slot: ${document.getElementById('summaryDateTime').textContent}`);
+                waConfirmBtn.href = `https://wa.me/917889826727?text=${message}`;
+            }
+            
+            const dateVal = new Date(document.getElementById('bookingDate').value);
+            const options = { month: 'long', day: 'numeric', year: 'numeric' };
+            const dateStr = isNaN(dateVal) ? "Tomorrow" : dateVal.toLocaleDateString('en-US', options);
+            document.getElementById('summaryDateTime').textContent = `${dateStr} (${document.getElementById('bookingSlot').value})`;
+            
+            const total = cart.reduce((sum, item) => sum + item.price, 0);
+            document.getElementById('summaryAmount').textContent = `₹${total.toLocaleString()}`;
+            
+            // Clear cart
+            cart = [];
+            saveCart();
+        }
+    }
+
+    nextBookingBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (currentStep === 1) {
+            const name = document.getElementById('patientName');
+            const phone = document.getElementById('patientPhone');
+            const age = document.getElementById('patientAge');
+            const gender = document.getElementById('patientGender');
+            
+            if (!name.value || !phone.value || !age.value || !gender.value) {
+                showToast("Please fill in all required fields.");
+                bookingForm.reportValidity();
+                return;
+            }
+            if (!/^\d{10}$/.test(phone.value.replace(/[-+()\s]/g, ''))) {
+                showToast("Please enter a valid 10-digit phone number.");
+                return;
+            }
+            setStep(2);
+        } else if (currentStep === 2) {
+            const mode = document.querySelector('input[name="collectionMode"]:checked').value;
+            const date = document.getElementById('bookingDate');
+            const slot = document.getElementById('bookingSlot');
+            
+            if (mode === 'home' && !patientAddress.value) {
+                showToast("Please enter your address.");
+                patientAddress.focus();
+                return;
+            }
+            if (!date.value) {
+                showToast("Please select a date.");
+                date.focus();
+                return;
+            }
+            if (!slot.value) {
+                showToast("Please choose a time slot.");
+                slot.focus();
+                return;
+            }
+            setStep(3);
+        } else if (currentStep === 3) {
+            closeBooking();
+        }
+    });
+
+    backBookingBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (currentStep === 2) {
+            setStep(1);
+        }
+    });
+
+    const bookingDate = document.getElementById('bookingDate');
+    if (bookingDate) {
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        bookingDate.value = tomorrow.toISOString().split('T')[0];
+        bookingDate.min = tomorrow.toISOString().split('T')[0];
+    }
+
+    // ==========================================
+    // 4. Patient Report Lookup
+    // ==========================================
+    const reportModal = document.getElementById('reportModal');
+    const reportOverlay = document.getElementById('reportOverlay');
+    const closeReportBtn = document.getElementById('closeReportBtn');
+    const reportInput = document.getElementById('reportInput');
+    const reportSearchBtn = document.getElementById('reportSearchBtn');
+    const printReportBtn = document.getElementById('printReportBtn');
+    const downloadReportPdfBtn = document.getElementById('downloadReportPdfBtn');
+
+    window.openReport = function(labId) {
+        if (!labId) {
+            showToast("Please enter a Lab ID.");
+            return;
+        }
+        const cleanId = labId.trim().toUpperCase();
+        if (cleanId === 'BP-12345' || cleanId === '12345') {
+            document.getElementById('reportLabId').textContent = "BP-12345";
+            document.getElementById('reportPatientName').textContent = "John Doe";
+            document.getElementById('reportPatientAge').textContent = "42";
+            document.getElementById('reportPatientGender').textContent = "Male";
+            
+            const now = new Date();
+            const options = { month: 'long', day: 'numeric', year: 'numeric' };
+            document.getElementById('reportDate').textContent = now.toLocaleDateString('en-US', options);
+            
+            const sampleDate = new Date();
+            sampleDate.setDate(sampleDate.getDate() - 1);
+            document.getElementById('reportSampleDate').textContent = sampleDate.toLocaleDateString('en-US', options) + " 08:30 AM";
+            
+            reportModal.classList.remove('hidden');
+        } else {
+            showToast("Report not found. Demo code: BP-12345");
+        }
+    }
+
+    if (reportSearchBtn) {
+        reportSearchBtn.addEventListener('click', () => {
+            openReport(reportInput.value);
+        });
+    }
+    if (reportInput) {
+        reportInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') openReport(reportInput.value);
+        });
+    }
+
+    window.closeReport = function() {
+        reportModal.classList.add('hidden');
+    }
+
+    if (closeReportBtn) closeReportBtn.addEventListener('click', closeReport);
+    if (reportOverlay) reportOverlay.addEventListener('click', closeReport);
+
+    if (printReportBtn) {
+        printReportBtn.addEventListener('click', () => {
+            window.print();
+        });
+    }
+
+    if (downloadReportPdfBtn) {
+        downloadReportPdfBtn.addEventListener('click', () => {
+            const patientName = document.getElementById('reportPatientName').textContent;
+            const reportContent = `
+========================================
+             CXN BIOPATH LABS           
+========================================
+Accurate Diagnostics. Trusted Healthcare.
+----------------------------------------
+Patient: ${patientName}
+Age/Gender: 42 / Male
+Lab ID: BP-12345
+Date: ${document.getElementById('reportDate').textContent}
+----------------------------------------
+BIOCHEMISTRY TEST RESULTS:
+Fasting Blood Glucose: 105.00 mg/dL (HIGH)   [Ref: 70 - 100]
+Hemoglobin (Hb): 14.50 g/dL (NORMAL)        [Ref: 13.8 - 17.2]
+TSH: 2.10 uIU/mL (NORMAL)                    [Ref: 0.4 - 4.5]
+Total Cholesterol: 215.00 mg/dL (HIGH)       [Ref: < 200]
+----------------------------------------
+*** END OF REPORT ***
+            `;
+            const blob = new Blob([reportContent], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `CXN_Biopath_Report_BP-12345.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showToast("Report download started!");
+        });
+    }
+
+    // ==========================================
+    // 5. Test Search Filter
+    // ==========================================
+    const testSearchInput = document.getElementById('testSearchInput');
+    if (testSearchInput) {
+        testSearchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const testSection = document.getElementById('tests-section');
+            const cards = testSection.querySelectorAll('.grid > .premium-card');
+            
+            cards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const desc = card.querySelector('p').textContent.toLowerCase();
+                if (title.includes(query) || desc.includes(query)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    }
+
+    // ==========================================
+    // 6. Toast Notification Center
+    // ==========================================
+    window.showToast = function(message) {
+        const oldToasts = document.querySelectorAll('.toast-alert');
+        oldToasts.forEach(t => t.remove());
+
+        const toast = document.createElement('div');
+        toast.className = 'toast-alert fixed bottom-4 left-4 bg-inverse-surface text-inverse-on-surface dark:bg-surface-container-highest dark:text-on-surface px-6 py-3 rounded-lg shadow-xl z-50 flex items-center gap-2 transform translate-y-20 opacity-0 transition-all duration-300';
+        toast.innerHTML = `<span class="material-symbols-outlined text-secondary">info</span> <span class="text-body-sm font-label-md">${message}</span>`;
+        document.body.appendChild(toast);
+        
+        setTimeout(() => {
+            toast.classList.remove('translate-y-20', 'opacity-0');
+        }, 50);
+        
+        setTimeout(() => {
+            toast.classList.add('translate-y-20', 'opacity-0');
+            setTimeout(() => toast.remove(), 300);
+        }, 3000);
+    }
+
+    // Initialize UI on load
+    updateCartUI();
+</script>
+</body></html>
